@@ -1,1 +1,163 @@
+const Serie=[
+    {
+        id:1,
+        tittle:"id",
+        idserie:1
+    },
+    {
+        nombre:2,
+        tittle: "nombre de la serie",
+        nommbreserie:1
+    },
+    {
+        clasificacion:3,
+        tittle: "clasificaciom",
+        clasificacionserie:2
+    },
+]
+const authors=[
+    {
+        id:1,
+        name:"242424",
+    },
+    {
+        nombre:2,
+        name:"dathnote",
+    },
+    {
+        clasificacion:3,
+        name:"a",
+    }
+]
 
+
+for (const iterator of serie) {
+    idAux= id.find(ele=> ele.id===iterator.idserie)
+    console.log(`serie ${iterator.tittle}  id
+: ${idAux.name} `);
+    // console.log(authorAux.name);
+}
+const Personaje=[
+    {
+        idpersonaje:2,
+        tittle:"idpersonaje",
+        idpersonaje:2
+    },
+    {
+        nombre:2,
+        tittle: "nombre del personaje",
+        nommbreserie:2
+    },
+    {
+        clasificacion:3,
+        tittle: "año de experiencia",
+        añoex:2
+    },
+]
+const asignacion=[
+    {
+        idpersonaje:1,
+        name:"24",
+    },
+    {
+        nombre:2,
+        name:"galo",
+    },
+    {
+        clasificacion:3,
+        name:"3",
+    }
+]
+
+
+for (const iterator of serie) {
+    idAux= id.find(ele=> ele.id===iterator.idpersonaje)
+    console.log(`idpersonaje ${iterator.tittle}  idpersonaje
+: ${idAux.name} `);
+    // console.log(authorAux.name);
+}
+const Serie=[
+    {
+        id:1,
+        tittle:"id",
+        idserie:1
+    },
+    {
+        idserie:2,
+        tittle: "ids",
+        ids:3
+    },
+    {
+        idpersonaje:3,
+        tittle: "id",
+        id:3
+    },
+ {
+       papel:4,
+        tittle:"nombrepapel",
+        nombre papel:4
+    },
+    {
+        tipopapel:5,
+        tittle: "tipopapel",
+        numeropapel:5
+    },
+    {
+        fechainicio:6,
+        tittle: "fechainicio",
+        fechaI:6
+    },
+ {
+        fechafin:7,
+        tittle: "fechafin",
+        fechaF:7
+    },
+    {
+        temporada:8,
+        tittle: "numerodetemporada",
+        numero:8
+    },
+]
+const authors=[
+    {
+        id:1,
+        name:"24",
+    },
+    {
+        idserie:2,
+        name:"1212",
+    },
+    {
+        idpersonaje:3,
+        name:"7",
+    },
+ {
+        papel:4,
+        name:"malo",
+    },
+{
+        tipopapel:5,
+        name:"24",
+    },
+{
+        fechainicio:6,
+        name:"24/04/2019",
+    },
+{
+        fechafin:7,
+        name:"24/04/2020",
+    },
+{
+        temporada:8,
+        name:"24/04/2020",
+    }
+
+]
+
+
+for (const iterator of serie) {
+    idAux= id.find(ele=> ele.id===iterator.idserie)
+    console.log(`serie ${iterator.tittle}  id
+: ${idAux.name} `);
+    // console.log(authorAux.name);
+}
