@@ -1,0 +1,60 @@
+{{#each errors }}
+<div class="d-flex w-100 justify-content-center ">
+
+    <div class="alert alert-danger alert-dismissible fade show w-50 d-flex justify-content-center" role="alert">
+    {{text}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+</div>
+{{/each}}
+
+<div class="d-flex w-100 justify-content-center ">
+
+    <form action="/api/v1/asignacion-serie-tv" method="POST">
+        <h4>Formulario de ingreso para Asignación</h4>
+
+        <div class="form">
+            <label htmlFor="">ID Serie:</label>
+            {{!-- <input id="id-serie" type="selec" placeholder="Ej: fg45125787a"/> --}}
+            <select name="id_serie" id="id-serie">
+                <option value="">Seleccione una serie registrada</option>
+                {{#each series }}
+                    <option value={{_id}}>{{nombre}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form">
+            <label htmlFor="">ID Personaje:</label>
+            <select name="id_personaje" id="id-serie">
+                <option value="">Seleccione un personaje registrado</option>
+                {{#each personajes }}
+                    <option value={{_id}}>{{nombre}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form">
+            <label htmlFor="">Papel:</label>
+            <input name="papel" id="papel" type="text" placeholder="Ej: Doctor"/>
+        </div>
+        <div class="form">
+            <label htmlFor="">Tipo de Papel:</label>
+            <input name="papel_tipo"  id="tipo-papel" type="text" placeholder="Secundario"/>
+        </div>
+        <div class="form">
+            <label htmlFor="">Fecha de inicio:</label>
+            <input  name="fecha_inicio" id="fecha-inicio" type="date" />
+        </div>
+        <div class="form">
+            <label htmlFor="">Fecha de Fin:</label>
+            <input name="fecha_fin" id="fecha-fin" type="date" />
+        </div>
+        <div class="form">
+            <label htmlFor="">Temporada:</label>
+            <input name="temporadas" id="temporada" type="number" placeholder="10"/>
+        </div>
+
+        <input id="btn-Enviar" type="submit" value="Enviar" />
+    </form>
+</div>
